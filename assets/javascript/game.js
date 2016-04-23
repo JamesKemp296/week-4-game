@@ -6,10 +6,27 @@
 
 
 */
-var Han{
+var Han {
 	firstName: "Han",
 	lastName: "Solo",
-	fullName: function() {
-		console.log(this.firstName + " " + this.lastName);
-	}
+	health: "120"
 }
+var Greedo {
+	fullName: "Greedo",
+	health: "100"
+}
+var Luke {
+	firstName: "Han",
+	lastName: "Solo",
+	health: "150"
+}
+var Vader {
+	firstName: "Darth",
+	lastName: "Vader",
+	health: "180"
+}
+
+console.log(Vader.fullName);
+// fullName: function() {
+// 		console.log(this.firstName + " " + this.lastName);
+// 	},
