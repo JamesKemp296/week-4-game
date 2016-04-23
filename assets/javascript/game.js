@@ -6,3 +6,10 @@
 
 
 */
+var Han{
+	firstName: "Han",
+	lastName: "Solo",
+	fullName: function() {
+		console.log(this.firstName + " " + this.lastName);
+	}
+}

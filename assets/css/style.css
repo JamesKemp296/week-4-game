@@ -16,3 +16,23 @@ footer{
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
+
+/*Classes to change image backgrounds*/
+.defaultColor{
+	padding: 25px 10px 25px 10px;
+	background-color: white;
+	border: solid 2px;
+	border-color: green;
+}
+.enemyColor{
+	padding: 25px 10px 25px 10px;
+	background-color: red;
+	border: solid 2px;
+	border-color: black;
+}
+.defenderColor{
+	padding: 25px 10px 25px 10px;
+	background-color: black;
+	border: solid 2px;
+	border-color: green;
+}
