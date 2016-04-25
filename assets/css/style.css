@@ -25,20 +25,45 @@ footer{
 
 /*Classes to change image backgrounds*/
 .defaultColor{
-	padding: 25px 10px 25px 10px;
+	padding: 90px 20px 90px 20px;
 	background-color: white;
 	border: solid 2px;
 	border-color: green;
 }
 .enemyColor{
-	padding: 25px 10px 25px 10px;
+	padding: 90px 20px 90px 20px;
 	background-color: red;
 	border: solid 2px;
 	border-color: black;
 }
 .defenderColor{
-	padding: 25px 10px 25px 10px;
+	padding: 90px 20px 90px 20px;
 	background-color: black;
 	border: solid 2px;
 	border-color: green;
+}
+
+/*Displays the image divs in a line*/
+.displayInline{
+	display: inline;
+}
+
+/*Pesky little grid was being dum. hopefully a temporary fix.*/
+#charSelect{
+	margin-top: 40px;
+}
+#yourChar{
+	margin-top: 40px;
+}
+
+/*Below this is all media Qs*/
+@media (max-width: 640px) {
+	body{
+	width: 600;
+ 	max-width: 3840px; /* YOUR BG MAX SIZE */
+  	background:url("../images/background.jpg") no-repeat;
+  	background-size: 600%;
+  	background-color: #375A7F;
+	}
+	
 }

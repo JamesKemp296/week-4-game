@@ -6,27 +6,42 @@
 
 
 */
-var Han {
-	firstName: "Han",
-	lastName: "Solo",
-	health: "120"
-}
-var Greedo {
-	fullName: "Greedo",
-	health: "100"
-}
-var Luke {
-	firstName: "Han",
-	lastName: "Solo",
-	health: "150"
-}
-var Vader {
-	firstName: "Darth",
-	lastName: "Vader",
-	health: "180"
-}
+$(document).ready(function(){
 
-console.log(Vader.fullName);
-// fullName: function() {
-// 		console.log(this.firstName + " " + this.lastName);
-// 	},
+	var Han = {
+		firstName: "Han",
+		lastName: "Solo",
+		fullName: function() {
+			console.log(this.firstName + " " + this.lastName);
+		},
+		health: "120"
+	};
+	var Greedo = {
+		fullName: "Greedo",
+		health: "100"
+	};
+	var Luke = {
+		firstName: "Luke",
+		lastName: "Skywalker",
+		fullName: function() {
+			console.log(this.firstName + " " + this.lastName);
+		},
+		health: "150"
+	};
+	var Vader ={
+		firstName: "Darth",
+		lastName: "Vader",
+		fullName: function() {
+			console.log(this.firstName + " " + this.lastName);
+		},
+		health: "180"
+	};
+	Vader.fullName();
+	Luke.fullName();
+	Han.fullName();
+
+	$("#Han").attr(Han);
+
+
+	
+});
