@@ -20,29 +20,6 @@ $(document).ready(function(){
 	    var randomNumberV = Math.floor((Math.random() * 101) + 19);
 	    $("#randomNumber").html(randomNumberV);
 	    $("#yourScore").html(yourScoreNumber);
-	    //checks if you won and resets everything
-
-		function checkIfWin(){
-			if (yourScoreNumber == randomNumberV){
-				winCounter++;
-				$("#winScore").html("<h2>Wins:</h2>" + winsCounter);
-				alert("You win!");
-				var nuka1Number = Math.floor((Math.random() * 12) + 1);
-				var nuka2Number = Math.floor((Math.random() * 12) + 1);
-				var nuka3Number = Math.floor((Math.random() * 12) + 1);
-				var nuka4Number = Math.floor((Math.random() * 12) + 1);
-				var yourScoreNumber = 0;
-			}
-			else if (yourScoreNumber > randomNumberV){
-				loseCounter++;
-				alert("You lose!");
-				var nuka1Number = Math.floor((Math.random() * 12) + 1);
-				var nuka2Number = Math.floor((Math.random() * 12) + 1);
-				var nuka3Number = Math.floor((Math.random() * 12) + 1);
-				var nuka4Number = Math.floor((Math.random() * 12) + 1);
-				var yourScoreNumber = 0;
-			}
-		}
 	}
 	randomNumberFunction();
 
@@ -54,7 +31,6 @@ $(document).ready(function(){
 		$("#yourScore").html(yourScoreNumber);
 		checkIfWin();
 	}
-
 	function increaseYourScore2(){
 		var nuka1Number = Math.floor((Math.random() * 12) + 1);
 		var yourScoreNumber = 0;
@@ -63,12 +39,10 @@ $(document).ready(function(){
 		$("#yourScore").html(yourScoreNumber);
 		checkIfWin();
 	}
-
 	function increaseYourScore3(){
 		$("#yourScore").html(nuka3Number);
 		checkIfWin();
 	}
-
 	function increaseYourScore4(){
 		$("#yourScore").html(nuka4Number);
 		checkIfWin();
@@ -80,7 +54,28 @@ $(document).ready(function(){
 	$("#nuka3").on("click", increaseYourScore3);
 	$("#nuka4").on("click", increaseYourScore4);
 
-	
+	//checks if you won and resets everything
 
+	function checkIfWin(){
+		if (yourScoreNumber == randomNumberV){
+			winCounter++;
+			$("#winScore").html("<h2>Wins:</h2>" + winsCounter);
+			alert("You win!");
+			var nuka1Number = Math.floor((Math.random() * 12) + 1);
+			var nuka2Number = Math.floor((Math.random() * 12) + 1);
+			var nuka3Number = Math.floor((Math.random() * 12) + 1);
+			var nuka4Number = Math.floor((Math.random() * 12) + 1);
+			var yourScoreNumber = 0;
+		}
+		else if (yourScoreNumber > randomNumberV){
+			loseCounter++;
+			alert("You lose!");
+			var nuka1Number = Math.floor((Math.random() * 12) + 1);
+			var nuka2Number = Math.floor((Math.random() * 12) + 1);
+			var nuka3Number = Math.floor((Math.random() * 12) + 1);
+			var nuka4Number = Math.floor((Math.random() * 12) + 1);
+			var yourScoreNumber = 0;
+		}
+	}
 
 });
