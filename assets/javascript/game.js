@@ -16,11 +16,13 @@ $(document).ready(function(){
 	var nuka4Number = Math.floor((Math.random() * 12) + 1);
 
 	//Sets the random number at the start of the game
+
 	function randomNumberFunction() {
 	    var randomNumberV = Math.floor((Math.random() * 101) + 19);
 	    $("#randomNumber").html(randomNumberV);
 	    $("#yourScore").html(yourScoreNumber);
 	}
+	
 	randomNumberFunction();
 
 	//functions that increase score
@@ -49,6 +51,7 @@ $(document).ready(function(){
 	}
 	
 	//on click will increase score 
+
 	$("#nuka1").on("click", increaseYourScore1);
 	$("#nuka2").on("click", increaseYourScore2);
 	$("#nuka3").on("click", increaseYourScore3);
