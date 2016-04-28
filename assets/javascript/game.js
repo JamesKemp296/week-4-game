@@ -1,51 +1,33 @@
 /*Psuedo Code
--4 characters to choose from
--you pick one character that gets moved into a div 
--Each charater has a set amount of health
--
+
 
 
 */
 $(document).ready(function(){
 
-	var Han = {
-		firstName: "Han",
-		lastName: "Solo",
-		fullName: function() {
-			console.log(this.firstName + " " + this.lastName);
-		},
-		health: "120"
-	};
-	var Greedo = {
-		fullName: "Greedo",
-		health: "100"
-	};
-	var Luke = {
-		firstName: "Luke",
-		lastName: "Skywalker",
-		fullName: function() {
-			console.log(this.firstName + " " + this.lastName);
-		},
-		health: "150"
-	};
-	var Vader ={
-		firstName: "Darth",
-		lastName: "Vader",
-		fullName: function() {
-			console.log(this.firstName + " " + this.lastName);
-		},
-		health: "180"
-	};
-	Vader.fullName();
-	Luke.fullName();
-	Han.fullName();
+//Sets the random number at the start of the game
+function randomNumberFunction() {
+    var randomNumber = Math.floor((Math.random() * 101) + 19);
+    $("#randomNumber").html(randomNumber);
+}
+randomNumberFunction();
+
+//variables for win and lose
+
+var winCounter = 0;
+var loseCounter = 0;
+var yourScore = 0
+
+// variables for each nuka cola
+
+function startGame() {
+var nuka1 = Math.floor((Math.random() * 12) + 1);
+var nuka2 = Math.floor((Math.random() * 12) + 1);
+var nuka3 = Math.floor((Math.random() * 12) + 1);
+var nuka4 = Math.floor((Math.random() * 12) + 1);
+randomNumberFunction();
 
 
-	var testhealth = 100;
-	$("#soloIMG").on("click", function(){
-		$("#soloIMG").html("<p>" + testhealth +"</p>");
-	});
-
-
+}
 
 });

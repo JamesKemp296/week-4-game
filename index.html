@@ -17,22 +17,28 @@
 		</div>
 
 		<!-- Instructions -->
-		<div class="row" id="charSelect">
-			<div class="col-md-12">
-				<p></p>
+		<div class="row">
+			<div class="col-md-12" id="instructions">
+				<p>You will be iven a random number at the start of the game.</p>
+				<p>There are four bottles of NukaCola below. By clicking a crystal you will add a specific amount of points to your score.</p>
+				<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click it.</p>
+				<p>Each time the game starts, the game will change the value of each crystal.</p>
 			</div>
 		</div>
 
 		<!-- Random Number and Score -->
-		<div class="row" id="yourChar">
+		<div class="row">
 			<div class="col-md-6">
-				<div>
+				<div id="rnDiv">
 					<h3 id="randomNumber"></h3>
 				</div>
+			</div>
+			<div class="col-md-6">
 				<div id="scoreBoard">
 					<h2 id="winOrLoseText"></h2>
-					<h2 id="winScore"></h2>
-					<h2 id="loseScore"></h2>
+					<h2 id="winScore">Wins: 0</h2>
+					<h2 id="loseScore">Loses: 0</h2>
 				</div>
 			</div>
 		</div>
@@ -40,23 +46,23 @@
 		<!-- NukaCola a.k.a the "Gems" in my game. -->
 		<div class="row">
 			<div class="col-md-3" id="nuka1">
-				
+				<img src="assets/images/nuka1.png">
 			</div>
-			<div class="col-md-3" id="nuka1">
-				
+			<div class="col-md-3" id="nuka2">
+				<img src="assets/images/nuka2.png">
 			</div>
-			<div class="col-md-3" id="nuka1">
-				
+			<div class="col-md-3" id="nuka3">
+				<img src="assets/images/nuka3.png">
 			</div>
-			<div class="col-md-3" id="nuka1">
-				
+			<div class="col-md-3" id="nuka4">
+				<img src="assets/images/nuka4.png">
 			</div>
 		</div>
 
 		<!-- Your score is text -->
 		<div class="row">
 			<div class="col-md-12">
-				<div>
+				<div id="yourScoreIs">
 					<h3>Your score is:</h3>
 				</div>
 			</div>
@@ -65,7 +71,7 @@
 		<!-- Your Score -->
 		<div class="row">
 			<div class="col-md-12">
-				<div>
+				<div id="scoreBox">
 					<h3 id="yourScore"></h3>
 				</div>
 			</div>
