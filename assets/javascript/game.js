@@ -40,8 +40,12 @@ $(document).ready(function(){
 	Luke.fullName();
 	Han.fullName();
 
-	$("#Han").attr(Han);
+
+	var testhealth = 100;
+	$("#soloIMG").on("click", function(){
+		$("#soloIMG").html("<p>" + testhealth +"</p>");
+	});
 
 
-	
+
 });

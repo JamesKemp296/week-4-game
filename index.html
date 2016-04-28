@@ -12,86 +12,61 @@
 	<div class="container container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<a href="http://fontmeme.com/star-wars-font/"><img src="http://fontmeme.com/embed.php?text=STAR%20WARS%20RPG%20GAME&name=Starjedi.ttf&size=50&style_color=000000" alt="Star Wars Font"></a>
+				<img src="http://fontmeme.com/embed.php?text=Fallout%20NukaCola%20Collector&name=Overseer Oblique.ttf&size=100&style_color=000000" alt="Fallout Font">
 			</div>	
 		</div>
 
-		<!-- Character Selection -->
+		<!-- Instructions -->
 		<div class="row" id="charSelect">
 			<div class="col-md-12">
-				
-				<!-- Han Solo Image -->
-
-				<div class="displayInline defaultColor">
-					<img id="soloIMG"src="assets/images/han.jpg" width="200px">
-				</div>
-
-				<!-- Greedo Image -->
-
-				<div class="displayInline defaultColor">
-					<img id="greedoIMG"src="assets/images/greedo.jpg" width="200px">
-				</div>
-				<!-- Luke Skywalker Image -->
-
-				<div class="displayInline defaultColor">
-					<img id="lukeIMG"src="assets/images/luke.jpg" width="200px">
-				</div>
-
-				<!-- Darth Vader Image -->
-
-				<div class="displayInline defaultColor">
-					<img id="vaderIMG"src="assets/images/vader.jpg" width="200px">
-				</div>
-
+				<p></p>
 			</div>
 		</div>
 
-		<!-- Your character -->
+		<!-- Random Number and Score -->
 		<div class="row" id="yourChar">
-			<div class="col-md-12">
+			<div class="col-md-6">
 				<div>
-					<h3>Your Character</h3>
+					<h3 id="randomNumber"></h3>
 				</div>
-				<div id="yourCharacter">
-					
+				<div id="scoreBoard">
+					<h2 id="winOrLoseText"></h2>
+					<h2 id="winScore"></h2>
+					<h2 id="loseScore"></h2>
 				</div>
 			</div>
 		</div>
 
-		<!-- Characters to attack -->
+		<!-- NukaCola a.k.a the "Gems" in my game. -->
+		<div class="row">
+			<div class="col-md-3" id="nuka1">
+				
+			</div>
+			<div class="col-md-3" id="nuka1">
+				
+			</div>
+			<div class="col-md-3" id="nuka1">
+				
+			</div>
+			<div class="col-md-3" id="nuka1">
+				
+			</div>
+		</div>
+
+		<!-- Your score is text -->
 		<div class="row">
 			<div class="col-md-12">
 				<div>
-					<h3>Enemies Available To Attack</h3>
-				</div>
-				<div id="enemiesToAttack">
-					
+					<h3>Your score is:</h3>
 				</div>
 			</div>
 		</div>
 
-		<!-- Fight Section -->
+		<!-- Your Score -->
 		<div class="row">
 			<div class="col-md-12">
 				<div>
-					<h3>Fight Section</h3>
-				</div>
-				<div id="fightButton">
-					<button class="btn btn-default">
-						Attack
-					</button>
-				</div>
-			</div>
-		</div>
-
-		<!-- Defender -->
-		<div class="row">
-			<div class="col-md-12">
-				<div>
-					<h3>Defender</h3>
-				</div>
-				<div id="enemyDefender">
-					
+					<h3 id="yourScore"></h3>
 				</div>
 			</div>
 		</div>
