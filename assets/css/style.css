@@ -5,8 +5,6 @@ body{
   	background-size: 100%;
   	background-color: #375A7F;
 }
-
-
 h3{
 	color: black;
 	font-size: 20px;
@@ -76,7 +74,9 @@ footer{
 .displayInline{
 	display: inline;
 }
-
+#randomNumber{
+	font-size: 83px;
+}
 
 /*Below this is all media Qs*/
 @media (max-width: 640px) {
