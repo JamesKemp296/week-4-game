@@ -8,7 +8,7 @@ $(document).ready(function(){
 	var loseCounter = 0;
 	var yourScoreNumber = 0;
 
-	// variables for each nuka cola (the gems in my game)
+	// variables for each gem
 
 	var nuka1Number = Math.floor((Math.random() * 12) + 1);
 	var nuka2Number = Math.floor((Math.random() * 12) + 1);
@@ -34,8 +34,6 @@ $(document).ready(function(){
 		checkIfWin();
 	}
 	function increaseYourScore2(){
-		var nuka1Number = Math.floor((Math.random() * 12) + 1);
-		var yourScoreNumber = 0;
 		(yourScoreNumber + nuka2Number);
 		console.log(yourScoreNumber);
 		$("#yourScore").html(yourScoreNumber);
