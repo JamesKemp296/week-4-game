@@ -36,15 +36,15 @@ $(document).ready(function(){
 	function increaseYourScore2(){
 		var nuka1Number = Math.floor((Math.random() * 12) + 1);
 		var yourScoreNumber = 0;
-		yourScoreNumber + nuka2Number;
+		(yourScoreNumber + nuka2Number);
 		console.log(yourScoreNumber);
 		$("#yourScore").html(yourScoreNumber);
 		checkIfWin();
 	}
 	function increaseYourScore3(){
 		$("#yourScore").html(nuka3Number);
-		checkIfWin();
-	}
+		checkIfWin();z
+			}
 	function increaseYourScore4(){
 		$("#yourScore").html(nuka4Number);
 		checkIfWin();
