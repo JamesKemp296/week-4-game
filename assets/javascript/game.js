@@ -67,7 +67,9 @@ $(document).ready(function(){
 			var nuka3Number = Math.floor((Math.random() * 12) + 1);
 			var nuka4Number = Math.floor((Math.random() * 12) + 1);
 			var yourScoreNumber = 0;
-		}
+
+		}//end of if statement
+
 		else if (yourScoreNumber > randomNumberV){
 			loseCounter++;
 			alert("You lose!");
@@ -76,7 +78,7 @@ $(document).ready(function(){
 			var nuka3Number = Math.floor((Math.random() * 12) + 1);
 			var nuka4Number = Math.floor((Math.random() * 12) + 1);
 			var yourScoreNumber = 0;
-		}
-	}
+		}// end of else if statement
+	}//end of checkIfWin function
 
-});
+});//end of startGame fucntion
